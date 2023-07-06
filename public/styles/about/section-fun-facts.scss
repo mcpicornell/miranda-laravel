@@ -1,0 +1,137 @@
+.section-fun-facts{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 83px;
+}
+
+
+
+.sections-fun-facts__subtitle{
+    margin-left: 20px;
+    margin-bottom: 24px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.sections-fun-facts__title{
+    margin-left: 20px;
+    margin-bottom: 36px;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: #222222;
+}
+
+.container__fun-facts{
+    margin-left: -20px;
+    margin-bottom: 24px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+   
+}
+
+.fun-facts__text{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text__title-details{
+    margin-left: 14px;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -1.8px;
+    color: #222222;
+}
+
+.text__subtitle-details{
+    margin-left: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -1.8px;
+    color: rgba(119, 119, 119, 1);
+}
+
+.section-fun-facts__carrusel{
+    width: 100%;
+    margin-bottom: 82px;
+    overflow-y: hidden;
+}
+
+.section-fun-facts__carrusel-no-swiper{
+    position: absolute;
+    left: -300%;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.carrusel__fun-facts{
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+@media (min-width: 1000px) {
+    .sections-fun-facts__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section-fun-facts__carrusel-no-swiper{
+        width: 100%;
+        margin-bottom: 82px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        position: relative;
+        left: 0px;
+        overflow: hidden;
+        visibility: visible;
+    }
+
+    .section-fun-facts__carrusel{
+    width: 100%;
+    margin-bottom: 82px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    position: absolute;
+    left: -300%;
+    overflow: hidden;
+    visibility: hidden;
+    }
+
+    .carrusel__fun-facts{
+        width: 95%;
+        margin: 15px;
+    }
+
+    .carrusel__fun-facts2{
+        position: relative;
+        visibility: visible;
+        left: 0px;
+        width: 95%;
+        margin: 15px;
+    }
+    
+    
+}

@@ -1,0 +1,80 @@
+.section-popular-rooms {
+  display: none;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 10px 20px 40px 20px;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  width: 10px;
+  left: -300px;
+}
+
+.section-popular-rooms-swiper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 10px 20px 40px 20px;
+  background: #222222;
+  visibility: visible;
+  position: relative;
+  left: 0px;
+  overflow: hidden;
+}
+
+.section-popular-rooms__subtitle {
+  margin-bottom: 25px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #BDAC8D;
+}
+
+.section-popular-rooms__title {
+  margin-bottom: 48px;
+  text-align: center;
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  color: #FFFFFF;
+}
+
+.section-selection-rooms__rooms {
+  background: #FFFFFF;
+}
+
+@media (min-width: 1000px) {
+  .section-popular-rooms-swiper {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -300px;
+    overflow: hidden;
+  }
+  .section-popular-rooms {
+    padding-top: 65px;
+    margin-bottom: 100px;
+    visibility: visible;
+    position: relative;
+    left: 0px;
+    overflow: hidden;
+    width: auto;
+  }
+  .section-popular-rooms__img-container-slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 5% 30px 5%;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=section-popular-rooms.css.map */

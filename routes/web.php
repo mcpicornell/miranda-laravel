@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\RoomDetailsController;
+use App\Http\Controllers\OffersController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [IndexController::class, 'index']);
+Route::get('/rooms', [RoomController::class, 'index']);
+Route::get('/about', function () {
+    return view('about');
 });
+Route::get('/offers', [OffersController::class, 'index']);
+Route::get('/roomDetails/{id}', [RoomDetailsController::class, 'show']);
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'store']);

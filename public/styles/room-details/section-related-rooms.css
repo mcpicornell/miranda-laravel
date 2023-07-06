@@ -1,0 +1,69 @@
+.section-related-rooms {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 101px;
+  position: relative;
+  left: 0px;
+  visibility: visible;
+}
+
+.section-related-rooms-no-swiper {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 101px;
+  position: absolute;
+  overflow: hidden;
+  left: -300%;
+  visibility: hidden;
+}
+
+.section-related-rooms__title {
+  margin-bottom: 13.45px;
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #222222;
+}
+
+.section-related-rooms__hr {
+  margin-bottom: 32.55px;
+}
+
+@media (min-width: 1000px) {
+  .section-related-rooms {
+    width: 70%;
+    margin-bottom: 50px;
+    left: 18%;
+    position: absolute;
+    overflow: hidden;
+    left: -300%;
+    visibility: hidden;
+  }
+  .section-related-rooms-no-swiper {
+    width: 70%;
+    margin-bottom: 50px;
+    margin-left: 19%;
+    left: 18%;
+    position: relative;
+    left: 0px;
+    visibility: visible;
+  }
+  .section-related-rooms__title {
+    width: 600px;
+    border-bottom: 1px solid #F1F1F1;
+  }
+  .section-related-rooms__hr {
+    visibility: hidden;
+    position: absolute;
+    left: -120%;
+  }
+  .section-related-rooms__container-related-rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-related-rooms__container-img {
+    width: 50%;
+  }
+}/*# sourceMappingURL=section-related-rooms.css.map */

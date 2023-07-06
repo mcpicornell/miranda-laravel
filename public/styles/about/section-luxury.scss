@@ -1,0 +1,219 @@
+
+    .section-about-us-4__section-luxury{
+        background-image: url('../../img/about/reception.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-left: 20px;
+        padding-top: 75px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 32px;
+        position: relative;
+    }
+    
+    .section-luxury__ultimate{
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 2.8px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    
+    }
+    
+    .section-luxury__us{
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        color: #FFFFFF;
+        margin-bottom: 63px;
+    }
+    
+    .section-luxury__container{
+        background: #FFFFFF;
+        position: absolute;
+        right: 20px;
+        bottom: -1px;
+    }
+    
+    .container__span-home{
+        right: 20px;
+        bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 16px 16px 16px 16px;
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: -0.48px;
+        color: #222222;
+        background: #FFFFFF;
+    }
+    
+    .span-home__effect{
+        margin-left: 8px;
+    }
+
+    .home{
+        cursor: pointer;
+    }
+    
+    .span-home__about{
+        padding-left: 8px;
+        color: rgba(190, 173, 142, 1)
+    ;
+    }
+    
+    .section-about-us-4__present{
+        padding-top: 60px;
+        background-color: #FFFFFF;
+        padding-left: 20px;
+        margin-bottom: 51px;
+        margin-right: 20px;
+    }
+    
+    .present__video{
+        width: 100%;
+    }
+    
+    .video__about-us-video{
+        width: 70%;
+    }
+    
+    .present__text{
+        margin-top: 36px;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.16px;
+    color: #222222;
+    }
+    
+    .options__container-options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .container-options__img-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px 30px 10px;
+    
+    }
+    
+    .img-text__img{
+        margin-bottom: 12px;
+    }
+    
+    .container-options__img-text-plane{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px 30px 10px;
+        
+        background-color: rgba(190, 173, 142, 1);
+    }
+    
+    .img-text__text-plane{
+        width: 140px;
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2.4px;
+        color: #FFFFFF;
+    }
+
+    .img-text__text{
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+
+@media (min-width: 1000px) {
+    .section-about-us-4__section-luxury{
+        background-image: url('../../img/about/reception.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-left: 30%;
+        padding-top: 150px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 32px;
+        position: relative;
+    }
+    .section-luxury__container{
+        background: #FFFFFF;
+        position: absolute;
+        right: 20%;
+        bottom: -1px;
+    }
+
+    .section-about-us-4__present{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .present__video{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .present__text{
+        width: 70%;
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 89px;
+        text-align: center;
+        letter-spacing: -2.16px;
+        color: #222222;
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+
+    .options__container-options{
+        display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+    }
+    
+    .container-options__img-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+    
+    .img-text__img{
+        margin-bottom: 12px;
+    }
+}

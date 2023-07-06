@@ -1,0 +1,207 @@
+@media (max-width: 999px) {
+  .uptitle-header {
+    position: absolute;
+    left: -200px;
+    visibility: hidden;
+  }
+  .uptitle-header__h5 {
+    position: absolute;
+    left: -200px;
+    visibility: hidden;
+  }
+  .header {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    display: flex;
+    width: 100%;
+    color: rgb(17, 17, 17);
+    align-items: center;
+    height: 70px;
+    z-index: 5;
+  }
+  .header__inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .inner__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 32px;
+  }
+  .inner__burger:hover {
+    cursor: pointer;
+  }
+  .inner__logo {
+    padding: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+    margin-right: 13.52px;
+    position: relative;
+    top: 5px;
+  }
+  .inner__title {
+    position: relative;
+  }
+  .burger__img {
+    width: 20px;
+    background: #111111;
+    margin-top: 4.22px;
+  }
+  .header__icons-right {
+    display: flex;
+  }
+  .icons-right__img {
+    width: 20px;
+    margin: 14px;
+  }
+  .header__inner-li {
+    visibility: hidden;
+    height: 0;
+    display: flex;
+    margin-top: 20px;
+    position: absolute;
+    top: 50px;
+    width: 600px;
+    padding-left: -10px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 5;
+  }
+  .inner-li__element {
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    list-style: none;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #111111;
+    padding: 12px;
+    background-color: #FFFFFF;
+  }
+  .inner-li__element a {
+    text-decoration: none;
+    color: #111111;
+  }
+}
+@media (min-width: 1000px) {
+  .uptitle-header {
+    background-color: rgb(34, 34, 34);
+    padding-bottom: 70px;
+    padding-left: 200px;
+    padding-top: 11px;
+    height: 100px;
+    visibility: visible;
+  }
+  .uptitle-header__h5 {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    bottom: 100px;
+    visibility: visible;
+  }
+  .burger__img {
+    position: absolute;
+    left: -200%;
+  }
+  .header {
+    top: 60px;
+    left: 15%;
+    position: absolute;
+    height: 90px;
+    display: flex;
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    display: flex;
+    width: 70%;
+    color: rgb(17, 17, 17);
+    align-items: center;
+  }
+  .header__inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 40px;
+  }
+  .inner__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 32px;
+    position: absolute;
+    visibility: hidden;
+    left: -200%;
+  }
+  .inner__burger:hover {
+    cursor: pointer;
+  }
+  .inner__logo {
+    padding: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+    margin-right: 13.52px;
+    width: 60px;
+    margin-left: -20px;
+  }
+  .inner__title {
+    width: 137px;
+    position: relative;
+    bottom: 5px;
+  }
+  .burger__img {
+    width: 20px;
+    background: #111111;
+    margin-top: 4.22px;
+  }
+  .header__icons-right {
+    width: 100%;
+    text-align: right;
+    margin-right: 25px;
+  }
+  .icons-right__img {
+    width: 50px;
+    margin-left: 20px;
+    border: 2px solid rgba(133, 133, 133, 0.3);
+    padding: 15px;
+  }
+  .header__inner-li {
+    visibility: visible;
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    left: 40px;
+    bottom: 25px;
+  }
+  .inner-li__element {
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    list-style: none;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #111111;
+    padding: 12px;
+  }
+  .inner-li__element a {
+    text-decoration: none;
+    color: #111111;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,75 @@
+.section-amenities{
+    margin: 30px 20px 104px 10px;
+}
+
+.section-amenities__title{
+    margin-left: 10px;
+    margin-bottom: 13.5px;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.section-amenities__hr{
+    margin-left: 10px;
+    background-color: #F1F1F1;
+    border: none;
+    margin-bottom: 35.5px;
+    height: 1px;
+}
+
+
+
+.section-amenities__amenities{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.amenities__amenities-container{
+    margin: 10px;
+    text-align: left;
+
+}
+
+.amenities-container__img{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.amenities-container__span{
+    text-align: center;
+}
+
+.amenities-container__span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #777777;
+}
+
+@media (min-width: 1000px) {
+    .section-amenities__title{
+        width: 500px;
+        border-bottom: 1px solid #F1F1F1;
+        position: relative;
+        margin-bottom: 50px;
+        left: 18%;
+    }
+    .section-amenities__hr{
+    visibility: hidden;
+    position: absolute;
+    left: -120%;
+    }
+
+    .section-amenities__amenities{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 18%;
+    }
+    
+}

@@ -1,0 +1,118 @@
+
+@media (max-width: 999px) {
+
+    .section-luxury-room__img-container{
+        width: 100%;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    
+    .section-luxury-room{
+        margin: 0 auto;
+        background: #222222;
+        text-align: center;
+        width: 85%;
+        padding-top: 20px;
+    }
+    
+    .section-luxury-room__container-luxury-room{
+        margin-top: 29.45px;
+    }
+    
+    .container-luxury-room__calendar-arrow-gold{
+        position: relative;
+        width: 50px;
+        margin-left: 38px;
+        margin-right: 30px;
+    }
+    
+    .container-luxury-room__span-white{
+        padding-top: 29.45px;
+        margin-bottom: 21px;
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: -0.9px;
+        color: #FFFFFF;
+    }
+    
+    .container-luxury-room__p-white{
+        margin-top: 21px;
+        margin-left: 35px;
+        margin-right: 35px;
+        padding-bottom: 38.33px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+    .section-luxury-room{
+        order: 1;
+        position: relative;
+        margin-left: 52px;
+        margin-right: 53px;
+        margin-bottom: 60px;
+        background: #222222;
+        text-align: center;
+        width: 270px;
+        left: 10px;
+    }
+    
+    
+    .section-luxury-room__container-luxury-room{
+        margin-top: 29.45px;
+    
+    }
+    
+    .container-luxury-room__calendar-arrow-gold{
+        position: relative;
+        width: 50px;
+        margin-left: 38px;
+        margin-right: 30px;
+        
+    }
+    
+    .container-luxury-room__span-white{
+        padding-top: 29.45px;
+        margin-bottom: 21px;
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: -0.9px;
+        color: #FFFFFF;
+    }
+    
+    .container-luxury-room__p-white{
+        margin-top: 21px;
+        margin-left: 35px;
+        margin-right: 35px;
+        padding-bottom: 38.33px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .section-luxury-room__img-container{
+        position: relative;
+        left: 50px;
+        bottom: 60px;
+    }
+}

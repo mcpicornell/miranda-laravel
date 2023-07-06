@@ -1,0 +1,256 @@
+@media (min-width: 1000px) {
+  .section-perfect-base {
+    background-image: url("../../img/home/views.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .section-perfect-base__text {
+    padding-top: 125px;
+    padding-left: 20%;
+    margin-bottom: 40px;
+  }
+  .text__experience {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+    margin-right: 118px;
+    margin-bottom: 40px;
+  }
+  .text__base {
+    color: #FFFFFF;
+    margin-right: 41px;
+    width: 800px;
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 130px;
+    letter-spacing: -3.6px;
+    color: #FFFFFF;
+  }
+  .section-perfect-base__button-container {
+    margin-top: -50px;
+    padding-left: 19%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .button {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .button-container__button-gold {
+    margin-top: 40px;
+    width: 240px;
+  }
+  .button-gold__span {
+    padding: 22.8px 46.27px 22.2px 48.73px;
+    background: #BEAD8E;
+  }
+  .button-container__button-black {
+    width: 240px;
+  }
+  .button-black__span {
+    padding: 22px 46.27px 20px 48.73px;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+  }
+  .section-perfect-base__form-check-availability {
+    background: #222222;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 20px;
+    align-items: center;
+  }
+  .form-check-availability {
+    margin: 10px;
+  }
+  .form-check-availability__span {
+    padding-top: 0px;
+    margin-bottom: 15px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  .form-check-availability__input-container {
+    margin-bottom: 0px;
+  }
+  .input-container__img {
+    margin-right: 2px;
+    width: 5%;
+  }
+  .form-check-availability__input {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background: #222222;
+    color: #686868;
+    margin-left: 8.8px;
+    box-shadow: none;
+    border: 0px solid;
+  }
+  .form-check-availability__golden.bar {
+    margin-top: 15px;
+  }
+  .form-check-availability__button {
+    padding-left: 28px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 22px;
+    background: #BEAD8E;
+    margin-top: 42px;
+    margin-left: 5%;
+    margin-bottom: 36px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 999px) {
+  .section-perfect-base {
+    background-image: url("../../img/home/views.jpg");
+    background-size: cover;
+    background-position: left;
+  }
+  .section-perfect-base__text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .text__experience {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+    margin-right: 118px;
+    margin-bottom: 40px;
+  }
+  .text__base {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    margin-right: 41px;
+  }
+  .section-perfect-base__button-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 76px;
+  }
+  .button {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .button-container__button-gold {
+    margin-top: 40px;
+    width: 240px;
+    margin-bottom: 69px;
+  }
+  .button-gold__span {
+    padding: 22.8px 46.27px 22.2px 48.73px;
+    background: #BEAD8E;
+    margin-bottom: 24px;
+  }
+  .button-container__button-black {
+    width: 240px;
+  }
+  .button-black__span {
+    padding: 22.8px 46.27px 22.2px 48.73px;
+    border: 2px solid rgba(255, 255, 255, 0.33);
+  }
+  .section-perfect-base__form-check-availability {
+    background: #222222;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .form-check-availability__span {
+    padding-top: 36px;
+    margin-bottom: 24px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  .form-check-availability__input-container {
+    display: flex;
+    margin-bottom: 14px;
+  }
+  .input-container__img {
+    margin-right: 2px;
+    width: 5%;
+  }
+  .form-check-availability__input {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background: #222222;
+    color: #686868;
+    margin-left: 8.8px;
+    box-shadow: none;
+    border: 0px solid;
+  }
+  .form-check-availability__golden.bar {
+    margin-top: 15px;
+  }
+  .form-check-availability__button {
+    margin-top: 42px;
+    padding-left: 28px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 22px;
+    background: #BEAD8E;
+    margin-bottom: 36px;
+    margin-right: 105px;
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=section-perfect-base.css.map */
