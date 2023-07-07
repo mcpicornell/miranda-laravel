@@ -19,10 +19,10 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/rooms', [RoomController::class, 'index']);
+Route::get('/rooms/{id}', [RoomController::class, 'show']);
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/offers', [OffersController::class, 'index']);
-Route::get('/roomDetails/{id}', [RoomDetailsController::class, 'show']);
+Route::get('/offers', [RoomController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'store']);

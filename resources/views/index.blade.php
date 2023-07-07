@@ -152,7 +152,7 @@
                                     $photos = json_decode($room->photos, true);
                                 @endphp
                                 @if (is_array($photos) && count($photos) > 0)
-                                    <a href="roomDetails/{{ $room->roomId }}">
+                                    <a href="rooms/{{ $room->roomId }}">
                                         <img class="carrusel__img-hand-picked" src="{{ $photos[0] }}" />
                                     </a>
                                 @endif

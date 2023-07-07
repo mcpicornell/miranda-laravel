@@ -139,7 +139,7 @@ $count = 0;
                         $photos = json_decode($room->photos, true);
                     @endphp
                     @if (is_array($photos) && count($photos) > 0)
-                    <a href="roomDetails/{{ $room->roomId }}">
+                    <a href="rooms/{{ $room->roomId }}">
                         <img class="rooms__img" src="{{ $photos[$count] }}" alt="room-photo">
                     </a>
                     @endif
@@ -236,7 +236,7 @@ $count = 0;
                                     $photos = json_decode($room->photos, true);
                                 @endphp
                                 @if (is_array($photos) && count($photos) > 0)
-                                    <a href="/roomDetails/{{ $room->roomId }}">
+                                    <a href="/rooms/{{ $room->roomId }}">
                                         <img style="width: 100%;" class="carrusel__img-hand-picked" src="{{ $photos[0] }}" />
                                     </a>
                                 @endif
