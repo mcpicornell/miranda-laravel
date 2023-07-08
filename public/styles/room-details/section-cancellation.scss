@@ -1,0 +1,39 @@
+.section-cancellation{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 101px;
+}
+
+.section-cancellation__title{
+    margin-bottom: 13.45px;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.section-cancellation__hr{
+    margin-bottom: 32.55px;
+}
+
+@media (min-width: 1000px) {
+    .section-cancellation{
+        width: 600px;
+        position: relative;
+        margin-bottom: 50px;
+        left: 18%;
+    }
+    
+    .section-cancellation__title{
+        border-bottom: 1px solid #F1F1F1;
+    }
+    
+    .section-cancellation__hr{
+        visibility: hidden;
+        position: absolute;
+        left: -120%;
+    }
+
+}

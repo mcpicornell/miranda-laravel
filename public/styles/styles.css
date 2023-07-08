@@ -1,0 +1,48 @@
+@import 'header.css';
+@import 'footer.css';
+@import 'blocks.css';
+@import './home/section-perfect-base.css';
+@import './home/section-about-us.css';
+@import './home/section-luxury-room.css';
+@import './home/section-hand-picked.css';
+@import './home/section-intro-video.css';
+@import './home/section-facilities.css';
+@import './home/section-menu.css';
+@import './home/section-objectives.css';
+@import './about/section-luxury.css';
+@import './about/section-restaurant.css';
+@import './about/section-slider-facilities.css';
+@import './about/section-fun-facts.css';
+@import './rooms/section-rooms-luxury.css';
+@import './rooms/section-selection-rooms.css';
+@import './room-details/section-room-avaliability.css';
+@import './room-details/section-amenities.css';
+@import './room-details/section-founder.css';
+@import './room-details/section-cancellation.css';
+@import './room-details/section-related-rooms.css';
+@import './offers/section-offer-rooms.css';
+@import './offers/section-popular-rooms.css';
+@import './contact/section-contact.css';
+@import './contact/section-form-contact.css';
+@font-face {
+  font-family: "Archivo";
+  src: url("./fonts/Archivo-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Old Standard TT";
+  src: url("./fonts/OldStandardTT-Regular.ttf");
+}
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */

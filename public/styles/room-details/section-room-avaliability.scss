@@ -1,0 +1,135 @@
+.section-room-availability{
+    padding: 20px;
+    
+}
+
+.section-room-availability__title{
+    margin-bottom: 16px;
+}
+
+.section-room-availability__subtitle{
+    margin-bottom: 16px;
+
+}
+
+.section-room-availability__price-gold{
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.section-room-availability__img{
+    width: 100%;
+}
+
+.img__room-details{
+    width: 100%;
+    margin-bottom: 49px;
+    border-radius: 2px;
+    height: 350px;
+}
+
+.section-room-availability__check{
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.54px;
+    color: #222222;
+}
+
+.check__check-in-out-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+}
+
+.check__check-in-out-container__span{
+    margin-top: 19px;
+    margin-left: 25px;
+    margin-bottom: 13px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #222222;
+}
+
+.check__check-in-out-container__input{
+    padding-left: 22px;
+    padding-right: 22px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    background: #F8F8F8;
+    height: 60px;
+    border-style: none;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    text-align:justify;
+    color: #777777;
+}
+
+.check-in-out-container__button{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 48px;
+    padding: 21px 10px 21px 10px;
+    border: none;
+    background: #BEAD8E;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media (min-width: 1000px) {
+    .section-room-availability{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin-left: 15%;
+    }
+
+    .container__section-room-availability{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        background: #FFFFFF;
+        position: relative;
+        top: 50px;
+        width: 97%;
+        padding-left: 30px;
+    }
+    
+    .section-room-availability__subtitle{
+        position: relative;
+        top: 20px;
+    }
+    .section-room-availability__title{
+        order: 1;
+        position: relative;
+        text-align: left;
+        width: 370px;
+    }
+
+    .section-room-availability__price-gold{
+        position: relative;
+        top: 50px;
+        right: 15%;
+    }
+
+    .form__section-room-availability{
+        width: 360px;
+    }
+}

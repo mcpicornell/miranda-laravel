@@ -1,0 +1,133 @@
+.section-offer-rooms {
+  margin: 32px 20px 16px 20px;
+  padding-bottom: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  overflow: hidden;
+}
+
+.section-offer-rooms__img {
+  margin-top: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.img__offer-rooms {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.img__prices-offer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 14px;
+  text-align: right;
+  bottom: 5px;
+}
+
+.prices-offer__gold {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 3px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 25px;
+  text-decoration-line: line-through;
+  color: #BEAD8E;
+}
+
+.gold__night {
+  font-size: 11px;
+  line-height: 11.97px;
+  text-decoration-line: line-through;
+  color: #BEAD8E;
+  font-family: "Archivo";
+  font-style: normal;
+}
+
+.prices-offer__red {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  color: #DE5777;
+}
+
+.red__night {
+  font-size: 12px;
+  line-height: 13.06px;
+}
+
+.section-amenities__amenities-offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.section-offer-rooms__details-room-offer {
+  margin: 16px 20px 20px 32px;
+}
+
+.details-room-offer__subtitle {
+  margin-bottom: 12px;
+}
+
+.details-room-offer__title {
+  margin-bottom: 16px;
+}
+
+.details-room-offer__text {
+  margin-bottom: 24px;
+}
+
+.details-room-offer__button {
+  background: #BDAC8D;
+  margin-left: 0px;
+  padding: 22px 60px 22px 60px;
+}
+
+@media (min-width: 1000px) {
+  .section-offer-rooms {
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .details-room-offer__text-and-amenities {
+    margin-top: -60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-amenities__amenities-offers {
+    margin-left: 15%;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+  .details-room-offer__title-box {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    border-top: 3px solid #BDAC8D;
+    border-bottom: 1px solid #ECECEC;
+    background: #FFFFFF;
+    position: relative;
+    bottom: 100px;
+  }
+  .img__prices-offer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 14px;
+    text-align: right;
+    bottom: -20px;
+    right: 50px;
+    z-index: 2;
+  }
+}/*# sourceMappingURL=section-offer-rooms.css.map */

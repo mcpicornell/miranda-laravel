@@ -1,0 +1,135 @@
+
+
+@media (max-width: 999px){
+    .section-rooms-luxury{
+        background-image: url('../../img/room/room.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-left: 20px;
+        padding-top: 75px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 32px;
+        position: relative;
+    }
+    
+    .section-rooms-luxury__ultimate{
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 2.8px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+        
+    }
+
+    .section-luxury-room__container{
+        background: #FFFFFF;
+        position: absolute;
+        right: 35px;
+        bottom: 0px;
+    }
+    
+    .section-rooms-luxury__room{
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        color: #FFFFFF;
+        margin-bottom: 63px;
+    }
+    
+    .section-rooms-luxury__span-home-rooms{
+        margin-left: 40%;
+        margin-right: 20px;
+        padding: 16px 24px 16px 24px;
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: -0.48px;
+        color: #222222;
+        background: #FFFFFF;
+    }
+    
+    .span-home-rooms__effect{
+        margin-left: 8px;
+    }
+    
+    .span-home-rooms__rooms{
+        padding-left: 8px;
+        color: rgba(190, 173, 142, 1);
+    }
+}
+
+
+@media (min-width: 1000px){
+    .section-rooms-luxury{
+        background-image: url('../../img/room/room3.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-left: 20%;
+        padding-top: 150px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 32px;
+        position: relative;
+    }
+    
+    .section-rooms-luxury__ultimate{
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 2.8px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    
+    .section-rooms-luxury__room{
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        color: #FFFFFF;
+        margin-bottom: 63px;
+    }
+
+    .section-luxury-room__container{
+        background: #FFFFFF;
+        position: absolute;
+        right: 20%;
+        bottom: -1px;
+    }
+    
+    .section-rooms-luxury__span-home-rooms{
+        margin-left: 40%;
+        margin-right: 20px;
+        padding: 16px 24px 16px 24px;
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: -0.48px;
+        color: #222222;
+        background: #FFFFFF;
+    }
+    
+    .span-home-rooms__effect{
+        margin-left: 8px;
+    }
+    
+    .span-home-rooms__rooms{
+        padding-left: 8px;
+        color: rgba(190, 173, 142, 1);
+    }
+}
