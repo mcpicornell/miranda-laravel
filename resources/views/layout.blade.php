@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+    <link rel="icon" href="/img/mirandaLogo.png" />
     <link rel="stylesheet" href="/styles/styles.css" type="text/css"/>
     <title>Hotel Miranda</title>
 
@@ -38,7 +37,11 @@
             </div>
 
             <div class="header__icons-right">
-                <img class="icons-right__img" src="/../img/header/contact.svg" />
+                <a href="/dashboard">
+                    <img style="cursor: pointer" class="icons-right__img" src="/../img/header/contact.svg" />
+                </a>
+                
+                
                 <img class="icons-right__img" src="/../img/header/searcher.svg" />
             </div>
         </header>

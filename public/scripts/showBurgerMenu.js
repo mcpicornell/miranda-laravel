@@ -41,3 +41,9 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     
     Swal.fire("Success!", "We will contact you shortly!", "success");
 });
+
+
+document.getElementById("profile").addEventListener("click", function(event) {
+    const newUrl = "/dashboard";
+    window.location.href = newUrl;
+});
