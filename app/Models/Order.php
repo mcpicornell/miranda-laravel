@@ -10,7 +10,7 @@ class Order extends Model
     use HasFactory;
     protected $fillable = [
         'user_guest_id',
-        'roomId',
+        'roomNumber',
         'type',
         'description',
     ];
@@ -24,6 +24,6 @@ class Order extends Model
     
     public function room()
     {
-        return $this->belongsTo(Room::class, 'roomId', 'id');
+        return $this->belongsTo(Room::class, 'roomNumber', 'roomNumber');
     }
 }

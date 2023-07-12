@@ -37,7 +37,7 @@
             </div>
 
             <div class="header__icons-right">
-                <a href="/dashboard">
+                <a href="/orders">
                     <img style="cursor: pointer" class="icons-right__img" src="/../img/header/contact.svg" />
                 </a>
                 
