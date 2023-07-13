@@ -27,20 +27,21 @@ class OrdersController extends Controller
         return redirect('/orders')->with('success', 'Order sended correctly!');
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         $request->validate([
+            'order_id' => 'required',
             'roomNumber' => 'required|numeric|min:1|max:100',
             'type' => 'required',
             'description' => 'required',
         ]);
 
-        $order = Order::findOrFail($id);
-        $order->roomNumber = $request->input('roomNumber');
+        $order = Order::findOrFail($request->input('order_id'));
+        $order->roomNumber = $request->input('roomNumber') ?? $order->roomNumber;
         $order->type = $request->input('type');
-        $order->description = $request->input('description');
+        $order->description = $request->input('description') ?? $order->description;
         $order->user_guest_id = Auth::id();
-
+    
         $order->save();
 
         return redirect('/orders')->with('success', 'Order updated correctly!');
@@ -64,6 +65,10 @@ class OrdersController extends Controller
     {
         $orders = Order::all();
         return view('orders', ['orders' => $orders]);
+    }
+    public function newOrder()
+    {
+        return view('newOrder');
     }
 
     public function orderChanges()

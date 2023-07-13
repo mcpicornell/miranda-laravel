@@ -15,15 +15,17 @@
                     <x-nav-link :href="route('orders.index')" :active="request()->routeIs('orders.index')">
                         {{ __('Orders') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('newOrder')" :active="request()->routeIs('newOrder')">
+                     <x-nav-link :href="route('newOrder')" :active="request()->routeIs('newOrder')">
                         {{ __('New Order') }}
-                    </x-nav-link>
+                    </x-nav-link> 
                     <x-nav-link :href="route('orderChanges.orderChanges')" :active="request()->routeIs('orderChanges.orderChanges')">
                         {{ __('Order Changes') }}
                     </x-nav-link>
                     <x-nav-link :href="route('deleteOrder.deleteOrder')" :active="request()->routeIs('deleteOrder.deleteOrder')">
                         {{ __('Delete Order') }}
                     </x-nav-link>
+
+                   
                 </div>
             </div>
 
