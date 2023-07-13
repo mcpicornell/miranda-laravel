@@ -27,9 +27,48 @@ class OrdersController extends Controller
         return redirect('/orders')->with('success', 'Order sended correctly!');
     }
 
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'roomNumber' => 'required|numeric|min:1|max:100',
+            'type' => 'required',
+            'description' => 'required',
+        ]);
+
+        $order = Order::findOrFail($id);
+        $order->roomNumber = $request->input('roomNumber');
+        $order->type = $request->input('type');
+        $order->description = $request->input('description');
+        $order->user_guest_id = Auth::id();
+
+        $order->save();
+
+        return redirect('/orders')->with('success', 'Order updated correctly!');
+    }
+
+    public function delete(Request $request)
+    {
+        $orderId = $request->input('order_id');
+        $order = Order::findOrFail($orderId);
+        $order->delete();
+
+        return redirect('/orders')->with('success', 'Order deleted successfully!');
+    }
+    public function deleteOrder()
+    {
+        $orders = Order::all();
+        return view('deleteOrder', ['orders' => $orders]);
+    }
+
     public function index()
     {
         $orders = Order::all();
         return view('orders', ['orders' => $orders]);
+    }
+
+    public function orderChanges()
+    {
+        $orders = Order::all();
+        return view('orderChanges', ['orders' => $orders]);
     }
 }

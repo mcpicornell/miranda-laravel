@@ -44,5 +44,9 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/orders', [OrdersController::class, 'index'])->name('orders.index');
 Route::post('/new-order', [OrdersController::class, 'store'])->name('orders.store');
+Route::get('/order-changes', [OrdersController::class, 'orderChanges'])->name('orderChanges.orderChanges');
+Route::put('/order-changes', [OrdersController::class, 'update'])->name('orderChanges.update');
+Route::get('/delete-order', [OrdersController::class, 'deleteOrder'])->name('deleteOrder.deleteOrder');
+Route::delete('/delete-order', [OrdersController::class, 'delete'])->name('deleteOrder.delete');
 
 require __DIR__.'/auth.php';
