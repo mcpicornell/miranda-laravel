@@ -144,7 +144,7 @@
     visibility: hidden;
     left: -200%;
   }
-  .inner__burger:hover {
+  .inner__burger {
     cursor: pointer;
   }
   .inner__logo {
@@ -180,12 +180,7 @@
     visibility: visible;
     position: absolute;
     display: flex;
-    margin-top: 20px;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    left: 40px;
-    bottom: 25px;
+    left: 35%;
   }
   .inner-li__element {
     text-decoration: none;

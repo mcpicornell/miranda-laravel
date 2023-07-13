@@ -37,11 +37,9 @@
             </div>
 
             <div class="header__icons-right">
-                <a href="/orders">
-                    <img style="cursor: pointer" class="icons-right__img" src="/../img/header/contact.svg" />
+                <a href="/orders" style="text-decoration: none;">
+                    <img style="cursor: pointer; " class="icons-right__img" src="/../img/header/contact.svg" />
                 </a>
-                
-                
                 <img class="icons-right__img" src="/../img/header/searcher.svg" />
             </div>
         </header>
