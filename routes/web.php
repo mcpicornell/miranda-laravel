@@ -24,6 +24,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/orders', [OrdersController::class, 'index'])->name('orders.index');
+    Route::get('/dashboard', [OrdersController::class, 'index'])->name('orders.index');
     Route::post('/new-order', [OrdersController::class, 'store'])->name('orders.store');
     Route::get('/new-order', function () {
         return view('newOrder');
@@ -33,8 +34,5 @@ Route::middleware('auth')->group(function () {
     Route::get('/delete-order', [OrdersController::class, 'deleteOrder'])->name('deleteOrder.deleteOrder');
     Route::delete('/delete-order', [OrdersController::class, 'delete'])->name('deleteOrder.delete');
 });
-
-
-
 
 require __DIR__ . '/auth.php';
