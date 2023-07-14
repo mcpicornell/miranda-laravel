@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Order;
+use App\Models\Room;
 
 class OrdersController extends Controller
 {
     public function store(Request $request)
     {
         $request->validate([
-            'roomNumber' => 'required|numeric|min:1|max:100',
+            'roomNumber' => 'required|numeric|min:1',
             'type' => 'required',
             'description' => 'required',
         ]);
@@ -31,7 +32,7 @@ class OrdersController extends Controller
     {
         $request->validate([
             'order_id' => 'required',
-            'roomNumber' => 'required|numeric|min:1|max:100',
+            'roomNumber' => 'required|numeric|min:1',
             'type' => 'required',
             'description' => 'required',
         ]);
@@ -66,14 +67,17 @@ class OrdersController extends Controller
         $orders = Order::all();
         return view('orders', ['orders' => $orders]);
     }
+
     public function newOrder()
     {
-        return view('newOrder');
+        $rooms = Room::all();
+        return view('newOrder', ['rooms' => $rooms]);
     }
 
     public function orderChanges()
     {
         $orders = Order::all();
-        return view('orderChanges', ['orders' => $orders]);
+        $rooms = Room::all();
+        return view('orderChanges', ['orders' => $orders, 'rooms' => $rooms]);
     }
 }

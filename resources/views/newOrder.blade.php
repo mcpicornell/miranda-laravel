@@ -13,9 +13,13 @@
                     <div>
                         <label style="text-align: right; margin-top:13px;" name="roomNumber" class="block text-gray-700">Room Number:</label>
                     </div>
-                    <div>
-                        <input style="max-width: 300px; border-radius: 10px;" type="number" name="roomNumber" class="form-input mt-1 w-full" required>
-                    </div>
+                    <select id="orderSelect" style="max-width: 300px; border-radius: 10px;" type="number" name="roomNumber" class="form-input mt-1 w-full" required>
+                        @foreach ($rooms as $room)
+                            <option value="{{ $room->roomNumber }}"  selected>
+                                {{ $room->roomNumber }} 
+                            </option>
+                        @endforeach
+                    </select>
                     <div>
                         <label style="text-align: right; margin-top:13px;" name="type" class="block text-gray-700">Service:</label>
                     </div>

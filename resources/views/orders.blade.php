@@ -6,8 +6,8 @@
         </h2>
     </x-slot>
 
-    <div class="container" style="margin: 0 auto;">
-        <table class="table table-striped" style="background-color:#FFFF; text-align: left; border-radius: 5px;;
+    <div class="container" style="margin: 0 auto; width: 100%">
+        <table class="table table-striped" style="background-color:#FFFF; text-align: left; border-radius: 5px;
         border-collapse: collapse;
         margin: 0 0 1em 0;
         caption-side: top;

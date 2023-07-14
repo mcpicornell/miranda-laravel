@@ -15,7 +15,7 @@
                     <x-nav-link :href="route('orders.index')" :active="request()->routeIs('orders.index')">
                         {{ __('Orders') }}
                     </x-nav-link>
-                     <x-nav-link :href="route('newOrder')" :active="request()->routeIs('newOrder')">
+                     <x-nav-link :href="route('newOrder.newOrder')" :active="request()->routeIs('newOrder.newOrder')">
                         {{ __('New Order') }}
                     </x-nav-link> 
                     <x-nav-link :href="route('orderChanges.orderChanges')" :active="request()->routeIs('orderChanges.orderChanges')">

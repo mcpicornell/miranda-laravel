@@ -17,7 +17,7 @@
                     <div>
                         <select id="orderSelect" style="max-width: 300px; border-radius: 10px;" type="text" name="order_id" class="form-input mt-1 w-full" required>
                             @foreach ($orders as $order)
-                                <option value="{{ $order->id }}" data-room-number="{{ $order->roomNumber }}" data-description="{{ $order->description }}">
+                                <option value="{{ $order->id }}" data-room-number="{{ $order->roomNumber }}" data-description="{{ $order->description }}" selected>
                                     ID: {{ $order->id }} - Room: {{ $order->roomNumber }} - {{ $order->type }} - {{ $order->description }}
                                 </option>
                             @endforeach
@@ -26,15 +26,19 @@
                     <div>
                         <label style="text-align: right; margin-top:13px;" name="roomNumber" class="block text-gray-700">Room Number:</label>
                     </div>
-                    <div>
-                        <input id="roomNumberInput" style="max-width: 300px; border-radius: 10px;" type="number" name="roomNumber" class="form-input mt-1 w-full" required>
-                    </div>
+                    <select id="orderSelect" style="max-width: 300px; border-radius: 10px;" type="number" name="roomNumber" class="form-input mt-1 w-full" required>
+                        @foreach ($rooms as $room)
+                            <option value="{{ $room->roomNumber }}" >
+                                {{ $room->roomNumber }} 
+                            </option>
+                        @endforeach
+                    </select>
                     <div>
                         <label style="text-align: right; margin-top:13px;" name="type" class="block text-gray-700">Service:</label>
                     </div>
                     <div>
                         <select id="typeSelect" style="max-width: 300px; border-radius: 10px;" type="text" name="type" class="form-input mt-1 w-full" required>
-                            <option value="food" selected>Food</option>
+                            <option value="food">Food</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -67,7 +71,7 @@
 
     orderSelect.addEventListener('change', function() {
         const selectedOption = this.options[this.selectedIndex];
-        roomNumberInput.placeholder = selectedOption.dataset.roomNumber;
+        roomNumberInput.options = selectedOption.dataset.roomNumber;
         descriptionInput.placeholder = selectedOption.dataset.description;
     });
     const initialOption = orderSelect.options[0];
