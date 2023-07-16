@@ -10,7 +10,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_guest_id');
-            $table->unsignedBigInteger('roomId');
+            $table->unsignedBigInteger('roomNumber');
 
             $table->string('type');
             $table->text('description');
@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
 
 
             $table->foreign('user_guest_id')->references('id')->on('users_guests')->onDelete('cascade');
-            $table->foreign('roomId')->references('id')->on('rooms')->onDelete('cascade');
+            $table->foreign('roomNumber')->references('roomNumber')->on('rooms')->onDelete('cascade');
         });
     }
 
