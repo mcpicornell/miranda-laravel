@@ -56,7 +56,9 @@
                         tempor.</p>
                     <div class="details__price-room-option">
                         <span class="price-room-oprion__price">${{ $room->price }}/Night</span>
-                        <span class="price-room-oprion__option">Booking Now</span>
+                        <a href="rooms/{{ $room->roomId }}">
+                            <span class="price-room-oprion__option">Booking Now</span>                        
+                        </a>
                     </div>
                 </div>
             </div>            
