@@ -38,7 +38,7 @@
 
             <img class="form-check-availability__golden.bar" src="/../img/goldenBar.svg" />
         </div>
-        <a class="button form-check-availability__button" href="/controllers/rooms.php">Check Availability</a>
+        <a class="button form-check-availability__button" href="/rooms">Check Availability</a>
     </form>
 
 </section>

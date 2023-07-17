@@ -25,7 +25,9 @@ $count = 0;
                 $photos = json_decode($room->photos, true);
             @endphp
             @if (is_array($photos) && count($photos) > 0)
+            <a href="rooms/{{ $room->roomId }}">
                 <img class="img__offer-rooms" src="{{ $photos[3] }}" />
+            </a>
             @endif
     @endif
         <div class="img__prices-offer">
@@ -103,7 +105,7 @@ $count = 0;
                 </div>
             </div>
         </div>
-        <a class="button details-room-offer__button"><span class="button__text-offer">Book Now</span></a>
+        <a href="rooms/{{ $room->roomId }}" class="button details-room-offer__button"><span class="button__text-offer">Book Now</span></a>
     </div>
     @php
         $count++;
