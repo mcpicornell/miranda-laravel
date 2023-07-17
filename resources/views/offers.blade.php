@@ -177,7 +177,7 @@ $count = 0;
                         tempor.</p>
                     <div class="details__price-room-option">
                         <span class="price-room-oprion__price">${{ $room->price }}/Night</span>
-                        <a href="rooms/{{ $room->roomId }}">
+                        <a href="rooms/{{ $room->roomId }}" class="price-room-option_link">
                             <span class="price-room-oprion__option">Booking Now</span>                        
                         </a>
                     </div>
