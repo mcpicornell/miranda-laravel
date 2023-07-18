@@ -66,8 +66,8 @@
     </div>
 
     <div class="form__input-message-container">
-        <img class="input-container-contact__img" src="/../img/form/5.message.svg" />
-        <input class="input-container-contact__input" placeholder="Enter message" name="message" type="text" required />
+        <img style="position: relative; bottom: 135px;" class="input-container-contact__img" src="/../img/form/5.message.svg" />
+        <textarea rows="8" id="contact-message" class="input-container-contact__input" placeholder="Enter message" name="message" type="text" required ></textarea>
     </div>
 
     <button type="submit" class="button section-form-contact__button">GET FREE QUOTE</button>

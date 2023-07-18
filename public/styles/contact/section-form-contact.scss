@@ -16,6 +16,7 @@
     background: #F8F8F8;
     margin-bottom: 16px;
     padding: 25px 21px 23px 21px;
+    width: 95%;
 }
 
 .input-container-contact__img{
@@ -31,13 +32,17 @@
     border: none;
     color: #777777;
     background: #F8F8F8;
+    width: 85%;
+}
+
+#contact-message{
+    resize: none;
 }
 
 .form__input-message-container{
     background: #F8F8F8;
     margin-bottom: 16px;
-    padding: 25px 21px 131px 21px;
-
+    padding: 25px 21px 25px 21px;
 }
 
 .section-form-contact__button{
@@ -63,10 +68,7 @@
         margin-top: 100px;
         margin-left: 10%;
         margin-right: 10%;
-        display: grid;
-        
-        grid-template-rows: 1fr 1fr ;
-    }
+        }
 
     .form__input-container-contact__form{
         display: grid;
@@ -84,7 +86,7 @@
     }
 
     .form__input-message-container{
-        padding: 25px 21px 131px 21px;
+        padding: 25px 21px 25px 21px;
         margin-bottom: 30px;
     
     }

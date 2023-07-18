@@ -45,4 +45,8 @@ html * {
 body {
   min-width: 320px;
   background-color: #FFFFFF;
+}
+
+*:focus {
+  outline: none;
 }/*# sourceMappingURL=styles.css.map */
