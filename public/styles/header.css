@@ -109,6 +109,7 @@
     position: absolute;
     bottom: 100px;
     visibility: visible;
+    transition: 0s;
   }
   .burger__img {
     position: absolute;
@@ -117,7 +118,7 @@
   .header {
     top: 60px;
     left: 15%;
-    position: absolute;
+    position: fixed;
     height: 90px;
     display: flex;
     z-index: 1;
@@ -128,7 +129,11 @@
     color: rgb(17, 17, 17);
     align-items: center;
     z-index: 15;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.3s ease-in-out;
+  }
+  .header.fixed {
+    position: fixed;
+    top: 30px;
   }
   .header__inner {
     display: flex;

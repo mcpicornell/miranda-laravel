@@ -27,47 +27,24 @@ headerTag.addEventListener("click", (event) => {
     window.location.href = newUrl;
 })
 
-
-
-
-
-
-
-// document.getElementById("profile").addEventListener("click", function(event) {
-//     const newUrl = "/dashboard";
-//     window.location.href = newUrl;
-// });
-
-
-
 window.addEventListener('scroll',function(){
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
-    if(scrollTop < lastScrollTop){
-        navbar.style.position='fixed';
-        subtitleNavbar.style.visibility= "hidden";
-
+    if(scrollTop > lastScrollTop){
+        navbar.style.top='-180px';
     }
     lastScrollTop = scrollTop;
-    navbar.style.position='absolute';
-    navbar.style.top='60px';
-    subtitleNavbar.style.visibility= "visible";
 });
 
 
 function mouseCoordinates(event) {
     let yPos= event.clientY;
-    if (yPos < 400  || window.scrollY <= 50) {
-        navbar.style.top='30px';
-        navbar.style.position='fixed';
-        if(window.scrollY >= 50){
-            subtitleNavbar.style.visibility= "hidden";
-        }
-        
-    } 
-    else {
+    if (yPos < 200  || window.scrollY <= 50) {
         navbar.style.top='60px';
-        navbar.style.position='absolute';
-        subtitleNavbar.style.visibility= "visible";
+        if(window.scrollY <= 50){
+            subtitleNavbar.style.visibility= "visible";
+        }
+    } else {
+        navbar.style.top='-180px';
+        subtitleNavbar.style.visibility= "hidden";
     }
-
 }
