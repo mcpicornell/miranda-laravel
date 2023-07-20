@@ -14,7 +14,7 @@
 <body>
     <div class="header-container">
         <div class="uptitle-header"></div>
-        <header class="header">
+        <header class="header" id='navbar'>
             <h5 class="uptitle-header__h5">We Make Your Feel Comfortable</h5>
             <div class="header__inner-li">
                 <li class="li inner-li__element"><a href="/about">About Us</a></li>
@@ -142,9 +142,7 @@
         <h3 class="copyright__element">Copyright By@Example - 2020</h3>
         <h3 class="copyright__element">Terms of use | Privacy Environmental Policy</h3>
     </footer>
-    <script src="/../scripts/showBurgerMenu.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
-    
+    <script src="/../scripts/showBurgerMenu.js"></script>    
 </body>
 
 </html>

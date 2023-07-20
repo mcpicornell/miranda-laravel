@@ -1,9 +1,12 @@
 
 
-
+const header = document.querySelector('.header')
 const menu = document.getElementsByClassName("header__inner-li")[0];
 const burger = document.getElementsByClassName("inner__burger")[0];
-
+const subtitleNavbar = document.getElementsByClassName('uptitle-header__h5')[0];
+let lastScrollTop;
+navbar = document.getElementsByClassName('header')[0];
+document.onmousemove= mouseCoordinates;
 
 burger.addEventListener("click", (event) => {
     if (menu.style.visibility == "visible") {
@@ -17,8 +20,6 @@ burger.addEventListener("click", (event) => {
 });
 
 const headerTag = document.getElementsByClassName("logo")[0];
-const homeTag = document.getElementsByClassName("home")[0];
-const locationContactImgTag = document.getElementsByClassName("img-container__img-form")[0];
 
 
 headerTag.addEventListener("click", (event) => {
@@ -26,24 +27,47 @@ headerTag.addEventListener("click", (event) => {
     window.location.href = newUrl;
 })
 
-homeTag.addEventListener("click", (event) => {
-    const newUrl = "/";
-    window.location.href = newUrl;
-})
 
-locationContactImgTag.addEventListener("click", (event) => {
-    const newUrl = "https://www.google.com/maps/place/OXYGEN+Academy+%7C+Full+Stack+Bootcamps/@40.4280583,-3.7159859,18z/data=!3m2!4b1!5s0xd418785496ed96b:0x1b2b7f3b14ba062f!4m6!3m5!1s0xd4229fc15efcb09:0xb0036150b0cd3867!8m2!3d40.4280563!4d-3.7146958!16s%2Fg%2F11q8x79343?entry=ttu";
-    window.open(newUrl);
-})
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    
-    Swal.fire("Success!", "We will contact you shortly!", "success");
+
+
+
+
+// document.getElementById("profile").addEventListener("click", function(event) {
+//     const newUrl = "/dashboard";
+//     window.location.href = newUrl;
+// });
+
+
+
+window.addEventListener('scroll',function(){
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    if(scrollTop < lastScrollTop){
+        navbar.style.position='fixed';
+        subtitleNavbar.style.visibility= "hidden";
+
+    }
+    lastScrollTop = scrollTop;
+    navbar.style.position='absolute';
+    navbar.style.top='60px';
+    subtitleNavbar.style.visibility= "visible";
 });
 
 
-document.getElementById("profile").addEventListener("click", function(event) {
-    const newUrl = "/dashboard";
-    window.location.href = newUrl;
-});
+function mouseCoordinates(event) {
+    let yPos= event.clientY;
+    if (yPos < 400  || window.scrollY <= 50) {
+        navbar.style.top='30px';
+        navbar.style.position='fixed';
+        if(window.scrollY >= 50){
+            subtitleNavbar.style.visibility= "hidden";
+        }
+        
+    } 
+    else {
+        navbar.style.top='60px';
+        navbar.style.position='absolute';
+        subtitleNavbar.style.visibility= "visible";
+    }
+
+}
