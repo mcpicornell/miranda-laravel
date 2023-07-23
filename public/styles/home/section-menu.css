@@ -1,6 +1,5 @@
 @media (min-width: 1000px) {
   .section-menu {
-    margin-top: 200px;
     display: flex;
     flex-direction: column;
     margin-left: 10%;
@@ -161,7 +160,6 @@
     left: -300%;
   }
   .section-menu {
-    margin-top: 200px;
     display: flex;
     flex-direction: column;
     margin-left: 20px;

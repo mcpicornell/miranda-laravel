@@ -4,7 +4,7 @@ const header = document.querySelector('.header')
 const menu = document.getElementsByClassName("header__inner-li")[0];
 const burger = document.getElementsByClassName("inner__burger")[0];
 const subtitleNavbar = document.getElementsByClassName('uptitle-header__h5')[0];
-let lastScrollTop;
+let lastScrollTop = 0;
 navbar = document.getElementsByClassName('header')[0];
 document.onmousemove= mouseCoordinates;
 
@@ -29,7 +29,11 @@ headerTag.addEventListener("click", (event) => {
 
 window.addEventListener('scroll',function(){
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
-    if(scrollTop > lastScrollTop){
+    if(scrollTop === 0){
+        navbar.style.top = '60px';
+        subtitleNavbar.style.visibility = "visible";
+    }
+    else if(scrollTop > lastScrollTop){
         navbar.style.top='-180px';
     }
     lastScrollTop = scrollTop;
