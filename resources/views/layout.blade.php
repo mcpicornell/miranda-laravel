@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/mirandaLogo.png" />
     <link rel="stylesheet" href="/styles/styles.css" type="text/css"/>
+
     <title>Hotel Miranda</title>
 
 </head>
@@ -142,7 +143,9 @@
         <h3 class="copyright__element">Copyright By@Example - 2020</h3>
         <h3 class="copyright__element">Terms of use | Privacy Environmental Policy</h3>
     </footer>
-    <script src="/../scripts/showBurgerMenu.js"></script>    
+    <script src="{{ asset('scripts/showBurgerMenu.js') }}"></script>
+    @yield('scripts')
+      
 </body>
 
 </html>

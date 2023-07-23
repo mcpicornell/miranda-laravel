@@ -45,45 +45,51 @@
     <div class="section-form-contact__img-container">
         <img alt="oxygenAcademy-location" class="img-container__img-form" src="/../img/contact/oxygenAcademy-location.jpg" />
     </div>
-    <form id="contactForm" class="section-form-contact__form" action="/controllers/contact.php" method="POST">
-    <div class="form__input-container-contact__form">
-        <div class="form__input-container-contact">
-            <img class="input-container-contact__img" src="/../img/form/1.fullName.svg" />
-            <input class="input-container-contact__input" placeholder="Your full name" name="name" type="text" />
+    <form id="contactForm" class="section-form-contact__form" action="/contact" method="POST">
+            
+        @csrf
+        <div class="form__input-container-contact__form">
+            <div class="form__input-container-contact">
+                <img class="input-container-contact__img" src="/../img/form/1.fullName.svg" />
+                <input class="input-container-contact__input" placeholder="Your full name" name="name" type="text" />
+            </div>
+            <div class="form__input-container-contact">
+                <img class="input-container-contact__img" src="/../img/form/2.addPhone.svg" />
+                <input class="input-container-contact__input" placeholder="Add phone number" name="phone" type="number" />
+            </div>
+            <div class="form__input-container-contact">
+                <img class="input-container-contact__img" src="/../img/form/3.emailAddress.svg" />
+                <input class="input-container-contact__input" placeholder="Enter email address" name="email" type="email" required />
+            </div>
+            <div class="form__input-container-contact">
+                <img class="input-container-contact__img" src="/../img/form/4.subject.svg" />
+                <input class="input-container-contact__input" placeholder="Enter subject" name="subject" type="text" required />
+            </div>
         </div>
-        <div class="form__input-container-contact">
-            <img class="input-container-contact__img" src="/../img/form/2.addPhone.svg" />
-            <input class="input-container-contact__input" placeholder="Add phone number" name="phone" type="number" />
-        </div>
-        <div class="form__input-container-contact">
-            <img class="input-container-contact__img" src="/../img/form/3.emailAddress.svg" />
-            <input class="input-container-contact__input" placeholder="Enter email address" name="email" type="email" required />
-        </div>
-        <div class="form__input-container-contact">
-            <img class="input-container-contact__img" src="/../img/form/4.subject.svg" />
-            <input class="input-container-contact__input" placeholder="Enter subject" name="subject" type="text" required />
-        </div>
-    </div>
 
-    <div class="form__input-message-container">
-        <img style="position: relative; bottom: 135px;" class="input-container-contact__img" src="/../img/form/5.message.svg" />
-        <textarea rows="8" id="contact-message" class="input-container-contact__input" placeholder="Enter message" name="message" type="text" required ></textarea>
-    </div>
+        <div class="form__input-message-container">
+            <img style="position: relative; bottom: 135px;" class="input-container-contact__img" src="/../img/form/5.message.svg" />
+            <textarea rows="8" id="contact-message" class="input-container-contact__input" placeholder="Enter message" name="message" type="text" required ></textarea>
+        </div>
 
-    <button type="submit" class="button section-form-contact__button">GET FREE QUOTE</button>
-</form>
+        <button type="submit" class="button section-form-contact__button">GET FREE QUOTE</button>
+    </form>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
-const locationContactImgTag = document.getElementsByClassName("img-container__img-form")[0];
-locationContactImgTag.addEventListener("click", (event) => {
-    const newUrl = "https://www.google.com/maps/place/OXYGEN+Academy+%7C+Full+Stack+Bootcamps/@40.4280583,-3.7159859,18z/data=!3m2!4b1!5s0xd418785496ed96b:0x1b2b7f3b14ba062f!4m6!3m5!1s0xd4229fc15efcb09:0xb0036150b0cd3867!8m2!3d40.4280563!4d-3.7146958!16s%2Fg%2F11q8x79343?entry=ttu";
-    window.open(newUrl);
-})
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    
-    Swal.fire("Success!", "We will contact you shortly!", "success");
-});
-</script>
+@endsection
+@section('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const locationContactImgTag = document.getElementsByClassName("img-container__img-form")[0];
+        locationContactImgTag.addEventListener("click", (event) => {
+            const newUrl = "https://www.google.com/maps/place/OXYGEN+Academy+%7C+Full+Stack+Bootcamps/@40.4280583,-3.7159859,18z/data=!3m2!4b1!5s0xd418785496ed96b:0x1b2b7f3b14ba062f!4m6!3m5!1s0xd4229fc15efcb09:0xb0036150b0cd3867!8m2!3d40.4280563!4d-3.7146958!16s%2Fg%2F11q8x79343?entry=ttu";
+            window.open(newUrl);
+        })
+    </script>
+
+    @if(session('success'))
+    <script >
+        Swal.fire("Success!", "{{ session('success') }}", "success");
+    </script>
+    @endif
 @endsection

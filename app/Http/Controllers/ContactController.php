@@ -32,8 +32,7 @@ class ContactController extends Controller
         $contact->isArchive = 0;
         $contact->save();
 
-        $message = 'Form correctly sent';
-
-        return view('contact', ['message' => $message]);
+        $message = "We will contact you shortly!";
+        return redirect()->to('/contact')->with('success', $message);
     }
 }

@@ -48,3 +48,5 @@ function mouseCoordinates(event) {
         subtitleNavbar.style.visibility= "hidden";
     }
 }
+
+
