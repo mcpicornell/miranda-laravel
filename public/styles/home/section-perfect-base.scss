@@ -4,7 +4,16 @@
         background-size: cover;
         background-position: center;
     }
-    
+
+    // input[type="date"]::-webkit-calendar-picker-indicator {
+    //     content: "\f073";
+    //     color: #BEAD8E;
+    // }
+
+    input[type=date]::-webkit-calendar-picker-indicator {
+        display: none;
+      }
+      
     .section-perfect-base__text{
         padding-top: 125px;
         padding-left: 20%;

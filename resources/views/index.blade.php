@@ -9,10 +9,10 @@
     </div>
 
     <div class="section-perfect-base__button-container">
-        <a href="#" class="button button-container__button-gold">
+        <a href="#take-a-tour" class="button button-container__button-gold">
             <h3 class="button-gold__span">TAKE A TOUR</h3>
         </a>
-        <a href="#" class="button button-container__button-black">
+        <a href="/about" class="button button-container__button-black">
             <h3 class="button-black__span">LEARN MORE</h3>
         </a>
     </div>
@@ -172,7 +172,6 @@
             @endforeach
 
         </div>
-
         <div class="swiper-button-prev"><img class="white__button-img" src="/../img/arrow-left.svg" /></div>
         <div class="swiper-button-next"><img class="gold__button-img" src="/../img/arrow-right.svg" /></div>
 
@@ -180,14 +179,13 @@
 </div>
 </section>
 
-<section class="section-intro-video">
+<section class="section-intro-video" id="take-a-tour">
     <div class="section-intro-video__container">
         <h3 class="h3 section-intro-video__sub-title-gold">Intro Video</h3>
         <h3 class="h3 section-intro-video__title">Meet With Our Luxury Place.</h3>
         <p class="p section-intro-video__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
-
     </div>
 
     <div class="section-intro-video__video">
@@ -197,7 +195,7 @@
         </video>
     </div>
 
-    <a type="button" class="button section-intro-video__button">
+    <a href="/rooms" class="button section-intro-video__button">
         <h3 class="button button-gold">BOOK NOW</h3>
     </a>
 
@@ -416,7 +414,7 @@
     <h3 class="section-menu__menu">MENU</h3>
     <h3 class="h3 section-menu__our-food">Our Foods Menu</h3>
 
-    <!-- SWIPER -->
+
 <div class="swiper section-menu__all-options-swiper" style=" overflow-y: hidden;">
     <div class="swiper-wrapper" style="display: flex; margin-left: 30px;">
         <div class="swiper-slide">
@@ -496,11 +494,7 @@
             <img class="gold__button-img" style="position: absolute; bottom: 10px;" src="/../img/arrow-right.svg" />
         </div>
     </div>
-    <!-- <div class="section-menu__buttons">
-        <a type="button" class="button buttons__white"><img class="white__button-img" src="/../img/arrow-left.svg" /></a>
-        <a type="button" class="button buttons__gold"><img class="gold__button-img" src="/../img/arrow-right.svg" /></a>
-    </div>
-     -->
+
 </div>
 
     <div class="section-menu__all-options">
